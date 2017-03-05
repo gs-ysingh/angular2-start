@@ -17,3 +17,4 @@ npm start
 
 6. Directives in Angular 2: NgFor, NgIf etc.
 
+Cloned from: https://github.com/angular/quickstart
