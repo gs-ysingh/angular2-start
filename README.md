@@ -1,5 +1,7 @@
 **How to start application:** 
+
 npm install
+
 npm start
 
 **This repository includes basic example of :**
