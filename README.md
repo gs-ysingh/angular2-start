@@ -9,3 +9,4 @@ npm start
 4. RxJS (Making a async call)
 5. Services
 6. Directives in Angular 2: NgFor, NgIf etc.
+
