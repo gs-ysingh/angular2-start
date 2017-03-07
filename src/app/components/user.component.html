@@ -7,7 +7,7 @@
   <label>Enter the name: </label>
   <input type="text" name="name" [(ngModel)]="name"/>
 </form>
-<button (click) = 'toggleHobbies()'>{{showHobby ? 'hide hobby' : 'show hobby'}}</button>
+<button class="toggleHobby" (click) = 'toggleHobbies()'>{{showHobby ? 'hide hobby' : 'show hobby'}}</button>
 <div *ngIf='showHobby'>Hobbies:
   <ul>
     <li *ngFor="let hobby of hobbies; let i = index">
@@ -22,7 +22,7 @@
 </div>
 
 <div>
-  <div *ngFor="let post of posts">
+  <div class="row" *ngFor="let post of posts">
     <h2>{{post.title}}</h2>
     <p>{{post.body}}</p>
   </div>
