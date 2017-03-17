@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { Address } from '../interfaces/address';
 import  { PostService } from '../services/post.service';
 import { Post } from  '../interfaces/post';
+
 // Decorators must come directly before the class
 
 @Component({
