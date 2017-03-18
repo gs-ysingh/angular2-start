@@ -15,6 +15,14 @@ const appRoutes: Routes = [
   {
     path: 'about',
     component: AboutComponent
+  },
+  {
+    path: 'product/:id', component: ProductDetails,
+    children: [
+      { path: '', redirectTo: 'overview', pathMatch: 'full' },
+      { path: 'overview', component: Overview },
+      { path: 'specs', component: Specs }
+    ]
   }
 ];
 
