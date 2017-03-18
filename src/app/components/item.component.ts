@@ -14,6 +14,6 @@ export class ItemComponent {
   @Input() post: Post;
 
   ngOnInit() {
-    console.log(this.posts);
+    console.log(this.post);
   }
 }

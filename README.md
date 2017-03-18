@@ -17,4 +17,7 @@ npm start
 
 6. Directives in Angular 2: NgFor, NgIf etc.
 
+
+Open http://localhost:3000/product/pages directly to see example of child pages have routes like /product/pages
+
 Cloned from: https://github.com/angular/quickstart
