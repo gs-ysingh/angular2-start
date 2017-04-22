@@ -7,7 +7,8 @@ import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: "overview",
-  template: `<h1>Overview Page</h1>`
+  template: `<h1>Overview Page</h1>
+              <div>Id: {{this.parentRouteId}}</div>`
 })
 
 export class OverviewComponent implements OnInit, OnDestroy {

@@ -3,12 +3,12 @@
  */
 
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'product',
   template: `
-    <p>Product Details: {{id}}</p>
+    <p>Product Details: {{this.parentRouteId}}</p>
     <!-- Product information -->
     <nav>
       <a [routerLink]="['overview']">Overview</a>
@@ -23,10 +23,11 @@ export class ProductComponent implements OnInit, OnDestroy {
   private sub: any;
   private parentRouteId: number;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private router: Router,
+              private route: ActivatedRoute) {}
 
   ngOnInit() {
-    this.sub = this.route.parent.params.subscribe(params => {
+    this.sub = this.route.params.subscribe(params => {
       this.parentRouteId = +params["id"];
     });
   }
